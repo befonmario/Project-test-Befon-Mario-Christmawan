@@ -57,7 +57,7 @@ const ListPost = () => {
           Showing {startPostIndex}-{endPostIndex} of {totalPosts}
         </p>
         <div className="controls">
-          <label className="label">Per page:</label>
+          <label className="label">Show Per page:</label>
           <select 
             value={pageSize} 
             onChange={(e) => handlePageSizeChange(Number(e.target.value))}
