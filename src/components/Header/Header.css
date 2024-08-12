@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.9);
+    transition: top 0.3s;
+    z-index: 1000;
+    background-color: #ff6600;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header.hide {
+    top: -70px;
+}
+
+.header.show {
+    top: 0;
+}
+
+.logo img {
+    height: 50px;
+    object-fit: contain;
+    margin-left: 150px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 190px;
+}
+
+.nav-list li {
+    margin-left: 40px;
+    color: white; /* Mengubah warna font menjadi putih */
+}
+
+.nav-list li.active a {
+    font-weight: bold;
+  }
+.nav-list li a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.nav-list li a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}

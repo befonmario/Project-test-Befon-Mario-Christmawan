@@ -1,0 +1,47 @@
+.post-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 16px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    text-align: left;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .post-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .post-details {
+    padding: 8px 16px 24px 16px;
+  }
+  
+  .post-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 12px 0 0 0;
+    max-height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;  /* Untuk browser berbasis WebKit */
+    -webkit-box-orient: vertical;
+    line-clamp: 3;  /* Properti standar (progresif, tidak didukung oleh semua browser) */
+    box-orient: vertical;  /* Properti standar (progresif, tidak didukung oleh semua browser) */
+  }
+  
+  .post-date {
+    font-size: 14px;
+    color: #888;
+    margin-top: 8px;
+  }
+  

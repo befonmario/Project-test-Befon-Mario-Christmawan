@@ -1,0 +1,78 @@
+.list-post {
+  margin: 25px 150px
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom untuk layar besar */
+  gap: 20px;
+  padding: 0px;
+  margin: 0
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px; /* Beri jarak antara elemen dalam controls */
+}
+
+.controls select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Membuat lebih rounded */
+  padding: 5px 30px 5px 10px; /* Memberikan ruang untuk panah custom */
+  font-size: 14px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M10.293 3.293 6 7.586 1.707 3.293A1 1 0 0 0 .293 4.707l5 5a1 1 0 0 0 1.414 0l5-5a1 1 0 1 0-1.414-1.414z' fill='%23333'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.controls select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,.25);
+}
+
+.controls label {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.showing-info {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  .post-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom untuk layar sedang */
+  }
+}
+
+@media (max-width: 900px) {
+  .post-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk layar kecil */
+  }
+}
+
+@media (max-width: 600px) {
+  .post-list {
+    grid-template-columns: repeat(1, 1fr); /* 1 kolom untuk layar sangat kecil */
+  }
+}
+
+.post-item {
+  list-style: none;
+}
